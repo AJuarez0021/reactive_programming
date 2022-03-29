@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+
+  reactor:
+    build: ./
+    image: reactor:latest   
+    ports:
+      - "8080:8080"
+    restart: on-failure

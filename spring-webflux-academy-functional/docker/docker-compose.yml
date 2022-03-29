@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+
+  academy-functional:
+    build: ./
+    image: academy-functional:latest   
+    ports:
+      - "8082:8082"
+    restart: on-failure
