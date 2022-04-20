@@ -264,6 +264,7 @@ public class SpringReactorDemoApplication implements CommandLineRunner {
         })
                 //.onErrorMap(ex -> new ArithmeticException("MAL CALCULO"))
                 .onErrorReturn("Ocurrio un error")
+				.doOnComplete(() -> LOG.info("Completado"))
                 .subscribe(LOG::info);
     }
         
