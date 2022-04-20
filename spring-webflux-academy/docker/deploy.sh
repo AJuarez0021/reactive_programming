@@ -7,7 +7,7 @@ echoYellow() { echo $'\e[0;33m'"$1"$'\e[0m'; }
 
 build(){
   mvn clean package
-  docker build -f Dockerfile -t academy-functional:latest .
+  docker build -f Dockerfile -t academy:latest .
   docker-compose up
 }
 
